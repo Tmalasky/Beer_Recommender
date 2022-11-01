@@ -8,5 +8,5 @@ Craft beer is becoming increasing demanded by consumers in todays market. Consum
 ## Team Members:
 - Jack Moletteire
 - Timothy Malasky
-- Souleymane NDIAYE
+- Souleymane Ndiaye
  
