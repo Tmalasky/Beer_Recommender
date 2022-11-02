@@ -21,4 +21,4 @@ Craft beer is becoming increasing demanded by consumers in todays market. Consum
 
 ### Resources
 
-[updated_beer_profile_and_ratings.csv](https://github.com/Tmalasky/Beer_Recommender/files/9914763/updated_beer_profile_and_ratings.csv)
+• [updated_beer_profile_and_ratings.csv](https://github.com/Tmalasky/Beer_Recommender/files/9914763/updated_beer_profile_and_ratings.csv)
