@@ -11,7 +11,7 @@ Craft beer is becoming increasing demanded by consumers in todays market. Consum
 - Timothy Malasky
 - Souleymane Ndiaye
  
-### Software
+## Software
 
 • SQLite
 
@@ -22,3 +22,13 @@ Craft beer is becoming increasing demanded by consumers in todays market. Consum
 ### Resources
 
 • [updated_beer_profile_and_ratings.csv](https://github.com/Tmalasky/Beer_Recommender/files/9914763/updated_beer_profile_and_ratings.csv)
+
+
+## Rules & Expectations
+- Rule # 1 Work as a team!
+- Rule # 2 Use Slack and Zoom to communicate any issues or to pass along any information.
+- Rule # 3 Team Participation and use of class time to work on prodject is required.
+- Rule # 4 Team members must ask for help when stuck on an individual task.
+- Rule # 5 Team members will complete the task on time for review and approval.
+- Rule # 6 Team members must inform if the task will be completed late.
+- Rule # 7 Team members must inform if an emergency presents itself and the team needs to complete the task.
