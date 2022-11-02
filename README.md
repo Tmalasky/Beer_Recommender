@@ -11,3 +11,14 @@ Craft beer is becoming increasing demanded by consumers in todays market. Consum
 - Timothy Malasky
 - Souleymane Ndiaye
  
+### Software
+
+• SQLite
+
+• Pandas
+
+• SciKitLearn
+
+### Resources
+
+[updated_beer_profile_and_ratings.csv](https://github.com/Tmalasky/Beer_Recommender/files/9914763/updated_beer_profile_and_ratings.csv)
