@@ -9,7 +9,7 @@ Craft beer is becoming increasing demanded by consumers in todays market. Consum
 - What style of beer is most popular based on data from consumers.
 - What type of beer you might prefer based on your input of type of taste preferences.
 - Which Breweries have the most popular beers based on reviews.
-- The Locations of the breweries with the highest rating beer reviews.
+- The breweries with the highest rating beer reviews.
 
 ## Team Members:
 ![Beer_Cheers](https://user-images.githubusercontent.com/105253626/199364645-35870cab-7101-4572-9d3b-02312be0f928.jpeg)
