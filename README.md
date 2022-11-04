@@ -7,6 +7,7 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 
 ## Questions to answer based on dataset.
 - What style of beer is most popular based on data from consumers.
+- Which flavor profile is most popular based on the dataset.
 - What type of beer you might prefer based on your input of type of taste preferences.
 - Which breweries have the most popular beers based on reviews.
 
