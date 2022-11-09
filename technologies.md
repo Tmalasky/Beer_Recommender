@@ -8,3 +8,9 @@ SQLite is the tool, we are planning to use to access the database with Python
 
 ## Machine Learning
 SciKitLearn will be used in order to create a classifier
+
+## Tableau
+Tableau will be used to visualize the data. 
+
+## Powerpoint 
+Powerpoint will be used to create slideshows for the presentation.
