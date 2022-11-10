@@ -11,6 +11,9 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 - What type of beer you might prefer based on your input of type of taste preferences?
 - Which breweries have the most popular beers based on reviews?
 
+## Answers to questions using the dataset.
+[Tableau Visual Graphs](https://public.tableau.com/app/profile/tim6081/viz/Final_Project_16681028326290/Most_popular_flavor_profile?publish=yes)
+
 ## Team Members:
 ![Beer_Cheers](https://user-images.githubusercontent.com/105253626/199364645-35870cab-7101-4572-9d3b-02312be0f928.jpeg)
 - Jack Moletteire
