@@ -29,42 +29,87 @@ body {
 
 
 /**************** SLIDERS ****************/
-.slidecontainer {
-    width: 100%; /* Width of the outside container */
-}
-
-/* The slider itself */
 .slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;  
-    background: #d3d3d3;
+    position: relative;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 50px;
+    padding: 15px;
+    padding-left: 25px;
+    background: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 15px 40px #7E6D5766;
+    margin-bottom: 25px;
+    }
+.slider p {
+    color: white;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
     outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
 }
-
-/* Mouse-over effects */
-.slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+.slider input[type="range"] {
+    -webkit-appearance:none !important;
+    width: 420px;
+    height: 5px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    border: none;
+    outline: none;
 }
-
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%; 
-    background: #aa7e04;
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 30px;
+    height:30px;
+    background: black;
+    border: 2px solid white;
+    border-radius: 500%;
     cursor: pointer;
 }
-
-.slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #aa7e04;
-    cursor: pointer;
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+    background: black;
 }
+
+/* CSS */
+.button {
+  appearance: button;
+  background-color: #11b8f5;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 25%;
+}
+

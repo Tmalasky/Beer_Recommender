@@ -23,10 +23,63 @@
             <!-- Link to refresh page  -->
             <a class="navbar-brand" href="Beer_Recommender.html"><center>Craft Beer Recommender</center></a>
         </nav>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        </div>
     </div>
+    <!-- Astringency -->
+    <div class="slider">
+        <p><b>Astringent</b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="astringentValue.innerText = this.value">
+        <p id="astringentValue">50</p>
+    </div>
+    <!-- Bitterness -->
+    <div class="slider">
+        <p><b>Bitter</b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="bitterValue.innerText = this.value">
+        <p id="bitterValue">50</p>
+    </div>
+    <!-- Sweetness -->
+    <div class="slider">
+        <p><b>Sweet </b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="sweetValue.innerText = this.value">
+        <p id="sweetValue">50</p>
+    </div>
+    <!-- Sourness -->
+    <div class="slider">
+        <p><b>Sour </b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="sourValue.innerText = this.value">
+        <p id="sourValue">50</p>
+    </div>
+    <!-- Saltiness -->
+    <div class="slider">
+        <p><b>Salty </b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="saltyValue.innerText = this.value">
+        <p id="saltyValue">50</p>
+    </div>
+    <!-- Fruitiness -->
+    <div class="slider">
+        <p><b>Fruity </b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="fruityValue.innerText = this.value">
+        <p id="fruityValue">50</p>
+    </div>
+    <!-- Hoppiness -->
+    <div class="slider">
+        <p><b>Hoppy </b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="hoppyValue.innerText = this.value">
+        <p id="hoppyValue">50</p>
+    </div>
+    <!-- Spices -->
+    <div class="slider">
+        <p><b>Spices </b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="spicyValue.innerText = this.value">
+        <p id="spicyValue">50</p>
+    </div>
+    <!-- Maltiness -->
+    <div class="slider">
+        <p><b>Malty </b><pre></pre></p>
+        <input type="range" min="0" max="100" value="50" step="1" oninput="maltyValue.innerText = this.value">
+        <p id="maltyValue">50</p>
+    </div>
+        <!-- HTML !-->
+    <button class="button btn-lg" role="button" onclick="history.go(0);">Reset Taste</button>
     <script src="./static/js/app.js"></script>
 </body>
 </html>
