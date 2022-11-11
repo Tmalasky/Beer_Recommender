@@ -16,6 +16,8 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 
 - What type of beer you might prefer based on your input of type of taste preferences?
 
+
+
 - Which breweries have the most popular beers based on reviews?
 
 <img width="815" alt="most popular reviews by brewery" src="https://user-images.githubusercontent.com/107282754/201243281-df83687e-fa15-44b5-ad26-d18bdc665de2.png">
