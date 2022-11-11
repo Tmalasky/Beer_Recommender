@@ -7,9 +7,18 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 
 ## Questions to answer based on dataset.
 - What style of beer is most popular based on data from consumers?
+
+<img width="823" alt="most popular based on data from consumers" src="https://user-images.githubusercontent.com/107282754/201243160-1d995410-64cf-422e-a9a4-b69d3e92425b.png">
+
 - Which flavor profile is most popular based on the dataset?
+
+<img width="831" alt="most popular flavor profile" src="https://user-images.githubusercontent.com/107282754/201243223-20bf36f3-694d-4f76-aa25-d193005b89c7.png">
+
 - What type of beer you might prefer based on your input of type of taste preferences?
+
 - Which breweries have the most popular beers based on reviews?
+
+<img width="815" alt="most popular reviews by brewery" src="https://user-images.githubusercontent.com/107282754/201243281-df83687e-fa15-44b5-ad26-d18bdc665de2.png">
 
 ## Answers to questions using the dataset.
 [Tableau Visual Graphs](https://public.tableau.com/app/profile/tim6081/viz/Final_Project_16681028326290/Most_popular_flavor_profile?publish=yes)
