@@ -21,7 +21,7 @@
         <!-- Navigation Bar-->
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <!-- Link to refresh page  -->
-            <a class="navbar-brand" href="Beer_Recommender.html"><center>Craft Beer Recommender</center></a>
+            <a class="navbar-brand" href="Beer_Recommender.html">Craft Beer Recommender</a>
         </nav>
     </div>
     <!-- Astringency -->
@@ -78,8 +78,8 @@
         <input type="range" min="0" max="100" value="50" step="1" oninput="maltyValue.innerText = this.value">
         <p id="maltyValue">50</p>
     </div>
-        <!-- HTML !-->
-    <button class="button btn-lg" role="button" onclick="history.go(0);">Reset Taste</button>
-    <script src="./static/js/app.js"></script>
+    <!-- Buttons -->
+    <button class="reset-button btn-lg" role="button" onclick="history.go(0);">Reset Taste</button>
+    <p><a class="button btn-lg" role="button" href="/beer">Go!</a></p>
 </body>
 </html>

@@ -82,7 +82,7 @@ body {
 }
 
 /* CSS */
-.button {
+.reset-button {
   appearance: button;
   background-color: #11b8f5;
   border: solid transparent;
