@@ -190,18 +190,20 @@ def find_beers(user_input):
 
     ##### FORMAT USER DATA #####
 
+    # Convert data to percentages
     user_input = np.asarray(user_input).astype(np.float64)
+    user_input = user_input / 100
 
     # Add random ABV to array
-    np.insert(user_input, 0, encoded_styles_df.sample().iloc[0][2], axis=0)
+    user_input = np.insert(user_input, 0, encoded_styles_df.sample().iloc[0][2])
 
     # Determine Min./Max. IBU by adding/subtracting
     # the average std. deviation of the IBU and Bitter
     # columns from the user's bitterness score
-    np.insert(user_input, 1, user_input[2] - 0.2, axis=0)
-    np.insert(user_input, 2, user_input[2] + 0.2, axis=0)
+    user_input = np.insert(user_input, 1, user_input[2] - 0.2)
+    user_input = np.insert(user_input, 2, user_input[2] + 0.2)
     user_input = user_input.reshape(1,-1)
-
+    print(user_input)
 
     ##### PERFORM CALCULATIONS #####
     
