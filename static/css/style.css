@@ -23,7 +23,7 @@ body {
 
 .navbar {
     background-image: url("../images/beer_close.png");
-    background-size: 100% 100%;
+    background-size: 18% 100%;
     text-align: center;
   }
 
@@ -48,7 +48,7 @@ body {
 .slider p {
     color: white;
     display: inline-block;
-    font-family: din-round,sans-serif;
+    font-family: din-round, sans-serif;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: .8px;
@@ -81,7 +81,6 @@ body {
     background: black;
 }
 
-/* CSS */
 .reset-button {
   appearance: button;
   background-color: #11b8f5;
@@ -92,7 +91,7 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   display: inline;
-  font-family: din-round,sans-serif;
+  font-family: din-round, sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: .8px;
@@ -113,3 +112,33 @@ body {
   width: 25%;
 }
 
+.button {
+    appearance: button;
+    background-color: #23d5ab;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
+  }
