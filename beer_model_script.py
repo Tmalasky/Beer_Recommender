@@ -64,8 +64,8 @@ def train_and_test(encoded_styles_df):
     # Split our preprocessed data into our features and target arrays
     # y (target) = Style
     # x (features) = ABV, Min./Max. IBU, all taste profile data
-    y = encoded_styles_df[encoded_styles_df.columns[16:]].values
-    X = encoded_styles_df[encoded_styles_df.columns[2:16]].values
+    y = encoded_styles_df[encoded_styles_df.columns[15:]].values
+    X = encoded_styles_df[encoded_styles_df.columns[2:15]].values
 
     # Split the preprocessed data into a training and testing dataset
     X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, random_state=78)
@@ -102,24 +102,22 @@ def model(encoded_styles_df):
     nn.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
     # Load weights
-    nn.load_weights("./ML_Weight_Checkpoints/beer_model_weights.h5")
+    nn.load_weights("./ML_Weight_Checkpoints/no_alcohol_model.h5")
 
     return nn
 
 
 ##### RUN MODEL ON USER DATA #####
 
-# Predict preferred beer style based on taste profile inputs
+# Predict preferred beer style based on user input
 def predict_style(nn, user_input, encode_df):
-    index = nn.predict(np.asarray(user_input).astype(np.float64)).argmax()
+    index = nn.predict(user_input).argmax()
     predicted_style = encode_df.columns[index].split('_', 1)[1]
     return predicted_style
 
 
 # Function to find top 5 similar beers of same and different styles, respectively
 def similar_beers(beers_df, reviews_df, user_input, style, same_style):
-    user_input = user_input.reshape(1,-1)
-
     if same_style:
         # Locate beers of same style
         sim_beers_df = beers_df.loc[beers_df['Style'] == style].reset_index(drop=True)
@@ -150,6 +148,7 @@ def similar_beers(beers_df, reviews_df, user_input, style, same_style):
 ##### DRIVER FUNCTION #####
 
 def find_beers(user_input):
+    
     ##### IMPORT DATA #####
 
     # Connect to the database
@@ -160,7 +159,7 @@ def find_beers(user_input):
     reviews_df = pd.read_sql_query("SELECT * FROM reviews", con)
 
 
-    ##### FORMATTING DATAFRAMES #####
+    ##### FORMAT DATAFRAMES #####
 
     # Insert Description column
     reviews_df.insert(3, 'Description', pd.read_sql_query("SELECT Description FROM beer_labels", con).values)
@@ -177,16 +176,35 @@ def find_beers(user_input):
     for col in reviews_df.columns[5:10]:
         reviews_df[col] = reviews_df[col].map("{:.2f}".format)
 
-    # Close connection to database
+    # Close database connection
     con.close()
+
     
+    ##### BUILD MODEL #####
 
     # Scale and Encode data
     encode_df, encoded_styles_df = scale_and_encode(beers_df)
 
-    # Build model
     nn = model(encoded_styles_df)
 
+
+    ##### FORMAT USER DATA #####
+
+    user_input = np.asarray(user_input).astype(np.float64)
+
+    # Add random ABV to array
+    np.insert(user_input, 0, encoded_styles_df.sample().iloc[0][2], axis=0)
+
+    # Determine Min./Max. IBU by adding/subtracting
+    # the average std. deviation of the IBU and Bitter
+    # columns from the user's bitterness score
+    np.insert(user_input, 1, user_input[2] - 0.2, axis=0)
+    np.insert(user_input, 2, user_input[2] + 0.2, axis=0)
+    user_input = user_input.reshape(1,-1)
+
+
+    ##### PERFORM CALCULATIONS #####
+    
     # Predict preferred style
     pred_style = predict_style(nn, user_input, encode_df)
 

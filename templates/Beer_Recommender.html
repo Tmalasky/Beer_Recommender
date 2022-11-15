@@ -13,73 +13,88 @@
     crossorigin="anonymous"
     />
     <!-- Link to our stylesheet -->
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    <!-- Wrapper class to help group BS elements -->
-    <div class="wrapper">
-        <!-- Navigation Bar-->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <!-- Link to refresh page  -->
-            <a class="navbar-brand" href="Beer_Recommender.html">Craft Beer Recommender</a>
-        </nav>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <!-- Link to refresh page  -->
+        <a class="navbar-brand" href="Beer_Recommender.html"><h1>Craft Beer Recommender</h1></a>
+    </nav>
+    <div class="container">
+        <!-- SLIDERS -->
+        <form method="post" id="sliders">
+            <!-- Astringency -->
+            <div class="slider">
+                <p><b>Astringent</b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="astringentValue.innerText = this.value">
+                <p id="astringentValue">50</p>
+            </div>
+            <!-- Body (Light/Dark)-->
+            <div class="slider">
+                <p><b>Darkness</b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="bodyValue.innerText = this.value">
+                <p id="bodyValue">50</p>
+            </div>
+            <!-- Bitterness -->
+            <div class="slider">
+                <p><b>Bitter</b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="bitterValue.innerText = this.value">
+                <p id="bitterValue">50</p>
+            </div>
+            <!-- Sweetness -->
+            <div class="slider">
+                <p><b>Sweet </b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="sweetValue.innerText = this.value">
+                <p id="sweetValue">50</p>
+            </div>
+            <!-- Sourness -->
+            <div class="slider">
+                <p><b>Sour </b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="sourValue.innerText = this.value">
+                <p id="sourValue">50</p>
+            </div>
+            <!-- Saltiness -->
+            <div class="slider">
+                <p><b>Salty </b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="saltyValue.innerText = this.value">
+                <p id="saltyValue">50</p>
+            </div>
+            <!-- Fruitiness -->
+            <div class="slider">
+                <p><b>Fruity </b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="fruityValue.innerText = this.value">
+                <p id="fruityValue">50</p>
+            </div>
+            <!-- Hoppiness -->
+            <div class="slider">
+                <p><b>Hoppy </b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="hoppyValue.innerText = this.value">
+                <p id="hoppyValue">50</p>
+            </div>
+            <!-- Spices -->
+            <div class="slider">
+                <p><b>Spices </b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="spicyValue.innerText = this.value">
+                <p id="spicyValue">50</p>
+            </div>
+            <!-- Maltiness -->
+            <div class="slider">
+                <p><b>Malty </b><pre></pre></p>
+                <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="maltyValue.innerText = this.value">
+                <p id="maltyValue">50</p>
+            </div>
+            <div class="col-md-12">
+                <p><a class="button btn-lg" role="button" href="your-beers">Go!</a></p>
+            </div>
+        </form>
+        <!-- BUTTONS -->
+        <div class="row" id="buttons">
+            <div class="col-md-12">
+                <button class="reset-button btn-lg" role="button" onclick="history.go(0);">Reset Taste</button>
+            </div>
+            
+        </div>
     </div>
-    <!-- Astringency -->
-    <div class="slider">
-        <p><b>Astringent</b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="astringentValue.innerText = this.value">
-        <p id="astringentValue">50</p>
-    </div>
-    <!-- Bitterness -->
-    <div class="slider">
-        <p><b>Bitter</b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="bitterValue.innerText = this.value">
-        <p id="bitterValue">50</p>
-    </div>
-    <!-- Sweetness -->
-    <div class="slider">
-        <p><b>Sweet </b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="sweetValue.innerText = this.value">
-        <p id="sweetValue">50</p>
-    </div>
-    <!-- Sourness -->
-    <div class="slider">
-        <p><b>Sour </b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="sourValue.innerText = this.value">
-        <p id="sourValue">50</p>
-    </div>
-    <!-- Saltiness -->
-    <div class="slider">
-        <p><b>Salty </b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="saltyValue.innerText = this.value">
-        <p id="saltyValue">50</p>
-    </div>
-    <!-- Fruitiness -->
-    <div class="slider">
-        <p><b>Fruity </b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="fruityValue.innerText = this.value">
-        <p id="fruityValue">50</p>
-    </div>
-    <!-- Hoppiness -->
-    <div class="slider">
-        <p><b>Hoppy </b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="hoppyValue.innerText = this.value">
-        <p id="hoppyValue">50</p>
-    </div>
-    <!-- Spices -->
-    <div class="slider">
-        <p><b>Spices </b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="spicyValue.innerText = this.value">
-        <p id="spicyValue">50</p>
-    </div>
-    <!-- Maltiness -->
-    <div class="slider">
-        <p><b>Malty </b><pre></pre></p>
-        <input type="range" min="0" max="100" value="50" step="1" oninput="maltyValue.innerText = this.value">
-        <p id="maltyValue">50</p>
-    </div>
-    <!-- Buttons -->
-    <button class="reset-button btn-lg" role="button" onclick="history.go(0);">Reset Taste</button>
-    <p><a class="button btn-lg" role="button" href="/beer">Go!</a></p>
 </body>
 </html>
