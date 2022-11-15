@@ -23,7 +23,7 @@
     </nav>
     <div class="container">
         <!-- SLIDERS -->
-        <form method="post" id="sliders">
+        <form action="your-beers" method="post" id="sliders">
             <!-- Astringency -->
             <div class="slider">
                 <p><b>Astringent</b><pre></pre></p>
@@ -84,16 +84,13 @@
                 <input type="range" name="user_input" min="0" max="100" value="50" step="1" oninput="maltyValue.innerText = this.value">
                 <p id="maltyValue">50</p>
             </div>
-            <div class="col-md-12">
-                <p><a class="button btn-lg" role="button" href="your-beers">Go!</a></p>
-            </div>
         </form>
         <!-- BUTTONS -->
         <div class="row" id="buttons">
             <div class="col-md-12">
-                <button class="reset-button btn-lg" role="button" onclick="history.go(0);">Reset Taste</button>
+                <button class="reset-button btn-lg" onclick="history.go(0);">Reset Taste</button>
+                <button class="button btn-lg" form="sliders" type="submit">Go!</button>
             </div>
-            
         </div>
     </div>
 </body>
