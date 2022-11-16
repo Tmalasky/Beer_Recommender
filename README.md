@@ -15,6 +15,7 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 
 - Which flavor profile is most popular based on the dataset?
 
+![Most_Popular_Flavor_Profile](https://user-images.githubusercontent.com/107282754/202057578-b0e2911f-4dd7-47ae-911d-6e2a22f3d593.png)
 
 
 - What type of beer you might prefer based on your input of type of taste preferences?
