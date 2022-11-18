@@ -44,11 +44,11 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 ## - Souleymane Ndiaye
  
 # Software
-• <img src="https://github.com/get-icon/geticon/raw/master/icons/python.svg" alt="Python" width="21px" height="21px"> Python
+•  <img width="21" height="21" src="Images/python.svg"> Python
 
 • <img width="21" height="21" src="Images/python_sqlite.jpeg"> SQLite
 
-• <img src="https://github.com/get-icon/geticon/raw/master/icons/pandas-icon.svg" alt="pandas" width="21px" height="21px"> Pandas library
+• <img width="21" height="21" src="Images/pandas-icon.svg"> Pandas library
 
 • <img width="21" height="21" src="Images/sklearnicon.png"> Machine Learning Algorithm – Scikit-Learn
 
