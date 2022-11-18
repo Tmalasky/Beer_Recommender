@@ -33,8 +33,13 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 ![Most_Popular_Breweries](https://user-images.githubusercontent.com/107282754/202057812-ec31150f-e75f-4911-a097-19dd783c526b.png)
 
 ### #4 What type of beer should I get based on our beer recommending system?
-![Home-Page]("./Images/home-page.png")
-![Results-Page]("./Images/results-page.png")
+<p align="center">
+  <img width="950" height="400" src="Images/home-page.png">
+</p>
+
+<p align="center">
+  <img width="950" height="400" src="Images/results-page.png">
+</p>
 
 # Team Members:
 <p align="center">
