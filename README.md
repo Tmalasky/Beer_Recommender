@@ -3,13 +3,32 @@
 
 ## Overview
 ## Purpose - Background & Topic Selection Reasoning
-Craft beer is becoming increasing demanded by consumers in today’s market. Consumers’ willingness to spend more on craft beer based on variety, flavor and quality has increased since its beginnings in the 1960s. Craft beer is typically made with higher quality ingredients, which provides consumers with a more flavorful and distinctive tasting beer than mass-produced options. Those reaching for a craft beer often want a variety of flavors and to try new things and that craft brews really help beer not lose more market shares over the last decade. The number of operating craft breweries in the U.S. reached an all-time high in 2021 of 9,118. We have come together as a team to help with the biggest question when it comes to craft beer, "Which one should I get?". We are developing a Beer Recommending system using [Kaggle Beer Profile and Ratings Data Set](https://www.kaggle.com/datasets/ruthgn/beer-profile-and-ratings-data-set) and a machine learning algorithm to recommend a beer just for you based on your taste preferences. 
+Craft beer is becoming increasing demanded by consumers in today’s market. Consumers’ willingness to spend more on craft beer based on variety, flavor and quality has increased since its beginnings in the 1960s. Craft beer is typically made with higher quality ingredients, which provides consumers with a more flavorful and distinctive tasting beer than mass-produced options. Those reaching for a craft beer often want to try something different and new. The number of operating craft breweries in the U.S. reached an all-time high in 2021 of 9,118. We have come together as a team to help with the biggest question when it comes to craft beer, "Which one should I get?". We are developing a Beer Recommending system using [Kaggle Beer Profile and Ratings Data Set](https://www.kaggle.com/datasets/ruthgn/beer-profile-and-ratings-data-set) and a machine learning algorithm to recommend a beer just for you based on your taste preferences. 
 
 ## Questions to answer based on dataset.
+![beerss](https://user-images.githubusercontent.com/105253626/201243106-e23309b2-9276-4195-b6a0-7a2cb446331d.jpeg)
+
+
 - What style of beer is most popular based on data from consumers?
+
+![Most_Popular_Beer](https://user-images.githubusercontent.com/107282754/202057784-6179d3f6-b4cc-4c6d-bdc1-fef3185858c7.png)
+
+
 - Which flavor profile is most popular based on the dataset?
+
+![Most_Popular_Flavor_Profile](https://user-images.githubusercontent.com/107282754/202057578-b0e2911f-4dd7-47ae-911d-6e2a22f3d593.png)
+
+
 - What type of beer you might prefer based on your input of type of taste preferences?
+
+
 - Which breweries have the most popular beers based on reviews?
+
+![Most_Popular_Breweries](https://user-images.githubusercontent.com/107282754/202057812-ec31150f-e75f-4911-a097-19dd783c526b.png)
+
+
+## Answers to questions using the dataset.
+[Tableau Visual Graphs](https://public.tableau.com/app/profile/tim6081/viz/Final_Project_16681028326290/Most_popular_flavor_profile?publish=yes)
 
 ## Team Members:
 ![Beer_Cheers](https://user-images.githubusercontent.com/105253626/199364645-35870cab-7101-4572-9d3b-02312be0f928.jpeg)
@@ -43,6 +62,8 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 - Rule # 7 Team members must inform if an emergency presents itself and responsibilities must be divided.
 
 ## Machine Learning Model
+![beer sciene](https://user-images.githubusercontent.com/105253626/201243600-9cf34bf9-f49e-485c-bc20-7bd7b0878951.jpeg)
+
 We are building a multi-class classification model that will analyze user preferences to determine
 preferred beer style and make recommendations.
 
