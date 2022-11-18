@@ -145,6 +145,7 @@ body {
     width: 25%;
   }
 
-.table {
+.table * {
     text-align: center;
+    background-color: red;
 }
