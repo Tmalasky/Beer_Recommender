@@ -82,34 +82,35 @@ body {
 }
 
 .reset-button {
-  appearance: button;
-  background-color: #11b8f5;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline;
-  font-family: din-round, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 13px 16px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  transform: translateZ(0);
-  transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 25%;
+    appearance: button;
+    background-color: #11b8f5;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    left: 40%;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 25%;
 }
 
 .button {
@@ -125,6 +126,7 @@ body {
     font-family: din-round, sans-serif;
     font-size: 15px;
     font-weight: 700;
+    left: 60%;
     letter-spacing: .8px;
     line-height: 20px;
     margin: 0;
@@ -142,3 +144,7 @@ body {
     white-space: nowrap;
     width: 25%;
   }
+
+.table {
+    text-align: center;
+}

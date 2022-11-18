@@ -137,6 +137,12 @@ def similar_beers(beers_df, reviews_df, user_input, style, same_style):
     recommends_df = recommends_df[['Name', 'Brewery', 'Style']]
     recommends_df = pd.merge(recommends_df, reviews_df, how='inner', on=['Name', 'Brewery', 'Style'])
     recommends_df = recommends_df.sort_values(by=['review_overall'], ascending=False)
+    recommends_df.reset_index(drop=True, inplace=True)
+    recommends_df.columns = ['Name', 'Brewery', 'Style', 'ABV', 'Overall (1-5)', 'Aroma', 'Appearance', 'Palate', 'Taste', 'Number of Reviews']
+    
+    # Reset the index
+    recommends_df.set_index('Name', drop=True, inplace=True)
+    recommends_df = recommends_df.rename_axis(None, axis='index')
 
     # Occasional issue with ABV rounding, map to ensure it is correct
     # before returning results.
@@ -161,19 +167,8 @@ def find_beers(user_input):
 
     ##### FORMAT DATAFRAMES #####
 
-    # Insert Description column
-    reviews_df.insert(3, 'Description', pd.read_sql_query("SELECT Description FROM beer_labels", con).values)
-
-    # Format Description column
-    ### Removing 'Notes:' from beginning of each description
-    remove_notes = [val.replace('Notes:', '') for val in reviews_df['Description'].values]
-    reviews_df['Description'] = remove_notes
-    reviews_df['Description'] = reviews_df['Description'].map(
-        lambda desc: 'No description available.' if desc == '' else desc
-    )
-
     # Round review scores to 2 decimal places
-    for col in reviews_df.columns[5:10]:
+    for col in reviews_df.columns[4:9]:
         reviews_df[col] = reviews_df[col].map("{:.2f}".format)
 
     # Close database connection
@@ -203,7 +198,6 @@ def find_beers(user_input):
     user_input = np.insert(user_input, 1, user_input[2] - 0.2)
     user_input = np.insert(user_input, 2, user_input[2] + 0.2)
     user_input = user_input.reshape(1,-1)
-    print(user_input)
 
     ##### PERFORM CALCULATIONS #####
     
@@ -211,9 +205,11 @@ def find_beers(user_input):
     pred_style = predict_style(nn, user_input, encode_df)
 
     # Top 5 similar beers of same style (by overall review score)
-    top_5_same_style = similar_beers(beers_df, reviews_df, user_input, pred_style, same_style=True)
+    top_5_same_style = similar_beers(beers_df, reviews_df, user_input, pred_style, same_style=True).to_html(justify='center', classes='table')
     
     # Top 5 similar beers of other styles (by overall review score)
-    top_5_diff_style = similar_beers(beers_df, reviews_df, user_input, pred_style, same_style=False)
+    top_5_diff_style = similar_beers(beers_df, reviews_df, user_input, pred_style, same_style=False).to_html(justify='center', classes='table')
+
+    
 
     return pred_style, top_5_same_style, top_5_diff_style
