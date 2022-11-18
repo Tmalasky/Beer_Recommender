@@ -16,15 +16,23 @@
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <!-- Link to refresh page  -->
+        <a class="navbar-brand" href="/"><h1>Craft Beer Recommender</h1></a>
+    </nav>
     <div class="container">
+        <p><h3>We think you'd like a <b>{{ pred_style }}</b></h3></p>
+        <br>
         <!-- Similar Beers -->
         <div class="row" id="same-style">
-            <h3>Beers of Same Style</h3>
-            <table class="table table-bordered">{{ top_5_same_style | safe }}</table>
+            <h3>Beers That Fit Your Style</h3>
+            <table class="table">{{ top_5_same_style | safe }}</table>
         </div>
+        <br></br>
         <div class="row" id="other-styles">
-            <h3>Beers of Other Styles</h3>
-            <table class="table table-bordered">{{ top_5_diff_style | safe }}</table>
+            <h3>Other Beers You Might Like</h3>
+            <table class="table">{{ top_5_diff_style | safe }}</table>
         </div>
     </div>
 </body>
