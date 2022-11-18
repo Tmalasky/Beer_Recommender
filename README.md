@@ -43,7 +43,7 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 ## - Timothy Malasky
 ## - Souleymane Ndiaye
  
-# Software
+# Software and Technologies
 •  <img width="21" height="21" src="Images/python.svg"> Python
 
 • <img width="21" height="21" src="Images/python_sqlite.jpeg"> SQLite
