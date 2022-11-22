@@ -70,7 +70,7 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 # Resources
 
 • Dataset: [updated_beer_profile_and_ratings.csv](https://github.com/Tmalasky/Beer_Recommender/files/9914763/updated_beer_profile_and_ratings.csv)<br>
-• Recommendation System Inspiration: [Creating a Beer Recommender (GitHub)](https://github.com/ruthgn/Beer-Recommender),  [Kaggle Link](https://www.kaggle.com/code/ruthgn/creating-a-beer-recommender-deployment)
+• Recommendation System Inspiration: [Creating a Beer Recommender (GitHub)](https://github.com/ruthgn/Beer-Recommender) + [Kaggle Link](https://www.kaggle.com/code/ruthgn/creating-a-beer-recommender-deployment)
 
 # Rules & Expectations
 - Rule # 1 Work as a team!
