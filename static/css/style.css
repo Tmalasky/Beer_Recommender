@@ -145,7 +145,8 @@ body {
     width: 25%;
   }
 
-.table * {
+.dataframe.table * {
     text-align: center;
-    background-color: red;
+    background-color: saddlebrown;
+    color: white;
 }

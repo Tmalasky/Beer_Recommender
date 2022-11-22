@@ -143,7 +143,6 @@ def similar_beers(beers_df, reviews_df, user_input, style, same_style):
     # Reset the index
     recommends_df.set_index('Name', drop=True, inplace=True)
     recommends_df = recommends_df.rename_axis(None, axis='index')
-    recommends_df.index.rename('Beer', inplace=True)
 
     # Occasional issue with ABV rounding, map to ensure it is correct
     # before returning results.
