@@ -69,7 +69,8 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 
 # Resources
 
-• [updated_beer_profile_and_ratings.csv](https://github.com/Tmalasky/Beer_Recommender/files/9914763/updated_beer_profile_and_ratings.csv)
+• Dataset: [updated_beer_profile_and_ratings.csv](https://github.com/Tmalasky/Beer_Recommender/files/9914763/updated_beer_profile_and_ratings.csv)
+• Recommendation System Inspiration: [Creating a Beer Recommender (GitHub)](https://github.com/ruthgn/Beer-Recommender), [Kaggle Link](https://www.kaggle.com/code/ruthgn/creating-a-beer-recommender-deployment)
 
 # Rules & Expectations
 - Rule # 1 Work as a team!
@@ -98,7 +99,7 @@ we decided the model would only learn from objective*, numerical data. This mean
 (e.g., Astringency, Bitterness, Saltiness, etc.) and chemical composition (ABV, min./max. IBU) would be considered
 in the construction of the model, while review data and identifying information would be excluded. The choice was 
 made with the belief that a model based on factual data would provide more significant output than one that considered 
-more opinionated statistics such as review scores, which we believed were more volatile, and susceptible to outliers.<br>
+opinionated statistics like review scores, which we believed were more volatile, and susceptible to outliers.<br>
 
 <font size=2>_*Taste profile, while not an exact science, is based on word counts from descriptions and user reviews, 
 with "the assumption that people writing reviews are more than likely describing what they do experience rather 
