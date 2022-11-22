@@ -145,8 +145,14 @@ body {
     width: 25%;
   }
 
-.dataframe.table * {
+.table * {
     text-align: center;
-    background-color: saddlebrown;
-    color: white;
+    color: burlywood;
+}
+
+tr:nth-child(odd) { background-color: rgb(67, 60, 50)}
+tr:nth-child(even) { background-color: rgb(50, 48, 43) }
+
+.table thead * { 
+    background-color: rgb(113, 69, 37);
 }
