@@ -88,6 +88,7 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 
 We are building a multi-class classification model that will analyze user preferences to determine
 preferred beer style and make recommendations.
+<br></br>
 
 ## Feature Selection
 Preliminary analysis and preprocessing involved analyzing variables (e.g., ABV, min./max. IBU, taste profile, review data, etc.) and grouping related data. A SQLite
@@ -104,6 +105,7 @@ opinionated statistics like review scores, which we believed were more volatile,
 <font size=2>_*Taste profile, while not an exact science, is based on word counts from descriptions and user reviews, 
 with "the assumption that people writing reviews are more than likely describing what they do experience rather 
 than what they do not. (Kaggle)" As such, we believe it is more reliable than arbitrarily assigned review scores._</font>
+<br></br>
 
 ## Preprocessing & Initial Construction
 Data was imported from the SQLite database and stored in Pandas dataframes. Taste and chemical data (our features) were
@@ -119,7 +121,7 @@ With the data finally prepped, a model could be constructed and trained. The mod
 10 total neurons; this simple algorithm purposed as a guinea pig, ensuring features were correctly standardized, encoded, and
 split. After some trial and error, a model with three layers and 35 total neurons (15, 12, and 8, in each hidden layer, respectively), trained for 200 epochs,
 proved about as accurate as possible given 38 possible outcomes, correctly predicting style of beer ~60% of the time. Additional neurons and layers proved negligible, while more epochs led
-to over-fitting.<br>
+to over-fitting.<br></br>
 
 ## Activation Functions
 Given a multi-class classification problem (where the model must determine probability of class membership) solved using 
@@ -129,3 +131,4 @@ for each hidden layer to use a ReLU activation function while the output layer u
 A ReLU activation function made the most sense for our hidden layers given its synergy with the MLP model, its computational simplicity (no need for exponential calculations leads to cheaper computations),
 and its efficiency in training a deep network on large, labeled datasets. While in our output layer, the softmax function outputs a vector of values that sum to 1.0, with each value representing a probability of class membership, 
 which was perfect for our problem.
+<br></br>
