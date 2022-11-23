@@ -74,7 +74,7 @@ Craft beer is becoming increasing demanded by consumers in today’s market. Con
 <br></br>
 
 ### ERD
-<img width="21" height="21" src="Images/ERD.png">
+<img src="Images/ERD.png">
 
 # Rules & Expectations
 - Rule # 1 Work as a team!
